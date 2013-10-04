@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1D263BD1-E286-40BF-8BC3-8804EC68AD61}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>VeritasDAL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\_ DLL FILES FOR REFERENCE\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SubSonic">
+      <HintPath>..\_lib\SubSonic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\AllStructs.cs" />
+    <Compile Include="DAL\External\AppSettingsExt.cs" />
+    <Compile Include="DAL\External\AppSettingsExtController.cs" />
+    <Compile Include="DAL\External\LookupsExt.cs" />
+    <Compile Include="DAL\External\LookupsExtController.cs" />
+    <Compile Include="DAL\External\PhysicsBasisExt.cs" />
+    <Compile Include="DAL\External\PhysicsBasisExtController.cs" />
+    <Compile Include="DAL\External\ProjectsExt.cs" />
+    <Compile Include="DAL\External\ProjectsExtController.cs" />
+    <Compile Include="DAL\External\ProspectRoomExt.cs" />
+    <Compile Include="DAL\External\ProspectRoomExtController.cs" />
+    <Compile Include="DAL\External\ProspectusExt.cs" />
+    <Compile Include="DAL\External\ProspectusExtController.cs" />
+    <Compile Include="DAL\External\ProspectusLinkRequestExt.cs" />
+    <Compile Include="DAL\External\ProspectusLinkRequestExtController.cs" />
+    <Compile Include="DAL\External\StoredProcedures.cs" />
+    <Compile Include="DAL\External\URLTagsExt.cs" />
+    <Compile Include="DAL\External\URLTagsExtController.cs" />
+    <Compile Include="DAL\External\URLTagVisitsExt.cs" />
+    <Compile Include="DAL\External\URLTagVisitsExtController.cs" />
+    <Compile Include="DAL\External\UsersExt.cs" />
+    <Compile Include="DAL\External\UsersExtController.cs" />
+    <Compile Include="DAL\Internal\ActiveEstimateForReporting.cs" />
+    <Compile Include="DAL\Internal\ActiveEstimatesWithActivityLastWeek.cs" />
+    <Compile Include="DAL\Internal\ActiveEstimatesWithActivityThisWeek.cs" />
+    <Compile Include="DAL\Internal\ActiveEstimatesWithNoActivityLastWeek.cs" />
+    <Compile Include="DAL\Internal\ActiveLead.cs" />
+    <Compile Include="DAL\Internal\ActiveLeadProjectDisplayList.cs" />
+    <Compile Include="DAL\Internal\ActiveProject.cs" />
+    <Compile Include="DAL\Internal\ActiveUser.cs" />
+    <Compile Include="DAL\Internal\AllProject.cs" />
+    <Compile Include="DAL\Internal\AppSetting.cs" />
+    <Compile Include="DAL\Internal\AppSettingController.cs" />
+    <Compile Include="DAL\Internal\Estimate.cs" />
+    <Compile Include="DAL\Internal\EstimateController.cs" />
+    <Compile Include="DAL\Internal\EstimateDisplay.cs" />
+    <Compile Include="DAL\Internal\EstimateItem.cs" />
+    <Compile Include="DAL\Internal\EstimateItemController.cs" />
+    <Compile Include="DAL\Internal\EstimatesActive.cs" />
+    <Compile Include="DAL\Internal\EstimatesAll.cs" />
+    <Compile Include="DAL\Internal\EstimatesSalesQueue.cs" />
+    <Compile Include="DAL\Internal\EstimateTimeline.cs" />
+    <Compile Include="DAL\Internal\EstimateTimelineAuditActive.cs" />
+    <Compile Include="DAL\Internal\EstimateTimelineAuditAll.cs" />
+    <Compile Include="DAL\Internal\EstimateTimelineController.cs" />
+    <Compile Include="DAL\Internal\EstimateWorkflowDuration.cs" />
+    <Compile Include="DAL\Internal\EstimatingDepartmentWeeklySummaryCurrent.cs" />
+    <Compile Include="DAL\Internal\EstimatingDepartmentWeeklySummaryPrior.cs" />
+    <Compile Include="DAL\Internal\LeadsWithEstimateSent.cs" />
+    <Compile Include="DAL\Internal\Lookup.cs" />
+    <Compile Include="DAL\Internal\LookupController.cs" />
+    <Compile Include="DAL\Internal\NextProjectNumber.cs" />
+    <Compile Include="DAL\Internal\PhysicsBasi.cs" />
+    <Compile Include="DAL\Internal\PhysicsBasiController.cs" />
+    <Compile Include="DAL\Internal\Project.cs" />
+    <Compile Include="DAL\Internal\ProjectController.cs" />
+    <Compile Include="DAL\Internal\ProspectRoom.cs" />
+    <Compile Include="DAL\Internal\ProspectRoomController.cs" />
+    <Compile Include="DAL\Internal\Prospectu.cs" />
+    <Compile Include="DAL\Internal\ProspectuController.cs" />
+    <Compile Include="DAL\Internal\ProspectusLinkRequest.cs" />
+    <Compile Include="DAL\Internal\ProspectusLinkRequestController.cs" />
+    <Compile Include="DAL\Internal\Report.cs" />
+    <Compile Include="DAL\Internal\ReportController.cs" />
+    <Compile Include="DAL\Internal\StoredProcedures.cs" />
+    <Compile Include="DAL\Internal\TaggedURLVisit.cs" />
+    <Compile Include="DAL\Internal\TakeoffDetail.cs" />
+    <Compile Include="DAL\Internal\TakeoffDetailController.cs" />
+    <Compile Include="DAL\Internal\TakeoffInfo.cs" />
+    <Compile Include="DAL\Internal\TakeoffInfoController.cs" />
+    <Compile Include="DAL\Internal\Testing.cs" />
+    <Compile Include="DAL\Internal\URLTag.cs" />
+    <Compile Include="DAL\Internal\URLTagController.cs" />
+    <Compile Include="DAL\Internal\URLTagVisit.cs" />
+    <Compile Include="DAL\Internal\URLTagVisitController.cs" />
+    <Compile Include="DAL\Internal\User.cs" />
+    <Compile Include="DAL\Internal\UserController.cs" />
+    <Compile Include="DAL\Internal\WeeklyEstimateSummary.cs" />
+    <Compile Include="DAL\Internal\WeeklyEstimateSummaryLastWeek.cs" />
+    <Compile Include="DAL\Internal\Workflow.cs" />
+    <Compile Include="DAL\Internal\WorkflowController.cs" />
+    <Compile Include="Extensions\Extensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
