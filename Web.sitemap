@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="Root"  description="">
+    <siteMapNode url="default.aspx" title="Home"  description="" />
+    <siteMapNode url="depts\admin\default.aspx" title="Admin"  description="Homepage for the Administration Department"  />
+    <siteMapNode url="depts\hr\default.aspx" title="HR"  description="Homepage for the Human Resources Department" />
+    <siteMapNode url="depts\it\default.aspx" title="IT"  description="Homepage for the Information Technology Department" />
+    <siteMapNode url="depts\engineering\default.aspx" title="Engineering"  description="Homepage for the Engineering Department" />
+    <siteMapNode url="depts\marketing\default.aspx" title="Marketing"  description="Homepage for the Marketing Department" />
+    <siteMapNode url="depts\sales\default.aspx" title="Sales"  description="Homepage for the Sales Department" />
+    <siteMapNode url="depts\physics\default.aspx" title="Physics"  description="Homepage for the Physics Department" />
+    <siteMapNode url="depts\pm\default.aspx" title="PM"  description="Homepage for the Project Management Department" />
+    <siteMapNode url="apps\default.aspx" title ="Applications" description="Veritas Web Applications" >
+      <!--<siteMapNode url="apps\reports\default.aspx" title="Reports"  description="Veritas Reports" />-->
+      <siteMapNode url="apps\documents\default.aspx" title="Documents"  description="Veritas Document Repository" />
+      <siteMapNode url="apps\LeadToProject\default.aspx" title="Lead To Project"  description="Lead To Project" />
+      <siteMapNode url="apps\projects\default.aspx" title="Projects"  description="Project Information" />
+      <siteMapNode url="apps\estimating\default.aspx" title="Estimate Tracking"  description="Estimate Tracking" />
+      <siteMapNode url="apps\estimating\priority.aspx" title="Estimate Priority"  description="Estimate Priority" />
+      <siteMapNode url="apps\URLTagging\default.aspx" title="URL Tagging"  description="URL Tagging" />
+      <!--<siteMapNode url="apps\Lookups\default.aspx" title="Lookup Lists"  description="Edit Lookups in Database" />-->
+    </siteMapNode>    
+  </siteMapNode>
+</siteMap>
