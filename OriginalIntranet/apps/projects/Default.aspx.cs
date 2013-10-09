@@ -288,7 +288,7 @@ public partial class apps_projects_Default : System.Web.UI.Page
 
         for (int i = regions.Length - 1; i > -1; i--)
         {
-            regions[i] = regions[i].Substring(75);
+            regions[i] = regions[i].Substring(42);
         }
         ddlProspectRegion.DataSource = regions;
         ddlProspectRegion.DataBind();
