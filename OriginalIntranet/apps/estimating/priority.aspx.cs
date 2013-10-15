@@ -332,7 +332,10 @@ public partial class apps_estimating_priority : System.Web.UI.Page
 
         for (int i = regions.Length - 1; i > -1; i--)
         {
-            regions[i] = regions[i].Substring(75);
+            var fullPath = regions[i];
+            var region = fullPath.Substring(fullPath.LastIndexOf('\\') + 1);
+
+             regions[i] = region;
         }
         ddlProspectRegion.DataSource = regions;
         ddlProspectRegion.DataBind();
