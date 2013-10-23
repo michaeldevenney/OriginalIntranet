@@ -680,7 +680,10 @@ public partial class apps_estimating_Default : System.Web.UI.Page
         DateTime? nullDate = null;
 
         temp.JobName = this.currentProspect.Id;
-        temp.Estimator = DAL.User.GetUserFromLogin(Page.User.Identity.Name).Id;
+        
+        var giggles = DAL.User.GetUserFromLogin(Page.User.Identity.Name);
+
+        temp.Estimator = giggles.Id;
         temp.EstimateNumber = Estimate.GetNextEstimateNumberForJob(currentProspect.Id);
         temp.Received = DateTime.Now;
         temp.Priority = Estimate.GetNextPriority();

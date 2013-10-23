@@ -177,7 +177,11 @@ public partial class apps_estimating_priority : System.Web.UI.Page
 
         Estimate temp = new Estimate();
         temp.JobName = proj.Id;
-        temp.Estimator = DAL.User.GetUserFromLogin(Page.User.Identity.Name).Id;
+        var giggles = DAL.User.GetUserFromLogin(Page.User.Identity.Name);
+        
+        if(giggles != null)
+            temp.Estimator = DAL.User.GetUserFromLogin(Page.User.Identity.Name).Id;
+        
         temp.EstimateNumber = Estimate.GetNextEstimateNumberForJob(proj.Id);
         temp.Received = DateTime.Now;
         temp.Priority = 0;
